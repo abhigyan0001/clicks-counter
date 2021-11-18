@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 function App() {
   const [time, setTime] = useState(30);
   const [clicks, setclicks] = useState(0);
-
+  
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(time-1);
