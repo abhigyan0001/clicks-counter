@@ -12,7 +12,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "homepage": "http://tsdon0001.github.io/cps-counter",
+    "homepage": "http://tsdon0001.github.io/clicks-counter",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
