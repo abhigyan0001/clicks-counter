@@ -1,7 +1,7 @@
 {
   "name": "cps-counter",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -12,7 +12,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "homepage": "http://tsdon0001.github.io/clicks-counter",
+    "homepage": "https://tsdon0001.github.io/clicks-counter",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
