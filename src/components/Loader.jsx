@@ -1,9 +1,13 @@
 import React from "react";
+import { useEffect } from "react/cjs/react.development";
 
 export default function Loader() {
+  useEffect(() => {
+    document.title = "Loading... - Clicks Counter"
+  })
   return (
     <>
-      <div class="text-center">
+      <div style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
         <div class="spinner-border" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>

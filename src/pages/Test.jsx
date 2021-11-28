@@ -15,8 +15,9 @@ export default function Test() {
   function incremeantClicks() {
     setclicks(clicks + 1);
   }
+
   function restartTest() {
-    window.location.reload();
+    window.location.reload();  
   }
   return (
     <>
@@ -24,6 +25,7 @@ export default function Test() {
         style={{ height: "7em", width: "8em" }}
         onClick={incremeantClicks}
         disabled={time <= 0 ? true : false}
+        className="btn btn-primary"
       >
         Click here {time <= 0 ? "[Disabled]" : ""}
       </button>
@@ -35,7 +37,7 @@ export default function Test() {
           ? `Waiting for ${time <= 0 ? "0" : time}s`
           : clicks / 30 + "cps"}
       </h2>
-      <button disabled={time <= 0 ? false : true} onClick={restartTest}>
+      <button disabled={time <= 0 ? false : true} onClick={restartTest} className="btn btn-success">
         Restart {time <= 0 ? "" : "[Disabled]"}
       </button>
     </>
