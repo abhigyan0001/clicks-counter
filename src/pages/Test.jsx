@@ -20,7 +20,7 @@ export default function Test() {
     window.location.reload();  
   }
   return (
-    <>
+    <React.Fragment>
       <button
         style={{ height: "7em", width: "8em" }}
         onClick={incremeantClicks}
@@ -40,6 +40,6 @@ export default function Test() {
       <button disabled={time <= 0 ? false : true} onClick={restartTest} className="btn btn-success">
         Restart {time <= 0 ? "" : "[Disabled]"}
       </button>
-    </>
+    </React.Fragment>
   );
 }

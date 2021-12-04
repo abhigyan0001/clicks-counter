@@ -12,11 +12,11 @@ export default function Home() {
         navigate("/test");
     }
     return (
-        <>
-            <div style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
+        <React.Fragment>
+            <div className="center" style={{display: "grid", placeItems: "center", paddingTop:"12em"}}>
                 <h3>Battle of Clicks!</h3>
-                <button type="button" class="btn btn-primary btn-lg" onClick={navigateToTest}>Test ➝</button>
+                <button type="button" className="btn btn-primary btn-lg" onClick={navigateToTest}>Test ➝</button>
             </div>
-        </>
+        </React.Fragment>
     )
 }
